@@ -1,0 +1,192 @@
+@media screen and (max-width: 480px){
+    body{
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(5.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    .rain{
+        height: 100%;
+        background: url(rain.png);
+        animation: rain .3s linear infinite;
+    }
+    .rain:before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        background: white;
+        animation: lighting .3s linear infinite;
+        opacity: 0;
+    }
+    @keyframes rain{
+        0%{
+            background-position: 0% 0%;
+        }
+        100%{
+            background-position: 20% 10%;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: right;
+        list-style-type: none;
+        margin-top: 25px;
+        font-size: 10px;
+    
+      }
+      ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.6s ease;
+        font-size: 7px;
+    }
+    ul li a:hover{
+    background-color: #fff;
+    color: #000;
+    }
+    ul li.active a{
+        background-color: #fff;
+        color: #000;
+    } 
+    section{
+        margin-top: 20px;
+        text-size-adjust: 300px;
+    }
+    section h1{
+        font-size: 40px;
+        color: rgb(255, 251, 251);
+    }
+    .description{
+        color:  white;
+        font-size: 19px;
+    }
+    button{
+        background-color: transparent;
+        border:1px solid white;
+        padding: 10px 10px;
+        color: white;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 20px;
+        box-sizing: border-box;
+        border-radius: 30px;
+        background: linear-gradient(90deg, #41f50b, #f441a5, #f5dd0a, #41f50b);
+        background-size: 400%;
+    }
+    
+        button:hover{
+            animation: animate 8s linear infinite;
+            }
+            @keyframes animate
+            {
+     
+                0%
+                {
+                    background-position: 0%;
+                }
+                100%
+                {
+                    background-position: 400%;
+                }
+        }
+    
+}
+
+@media screen and (min-width: 480px){
+    body{
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    .rain{
+        height: 100vh;
+        background: url(rain.png);
+        animation: rain .3s linear infinite;
+    }
+    .rain:before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        background: white;
+        animation: lighting .3s linear infinite;
+        opacity: 0;
+    }
+    @keyframes rain{
+        0%{
+            background-position: 0% 0%;
+        }
+        100%{
+            background-position: 20% 10%;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: right;
+        list-style-type: none;
+        margin-top: 25px;
+        font-size: 10px;
+    
+      }
+      ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.6s ease;
+        font-size: 20px;
+    }
+    ul li a:hover{
+    background-color: #fff;
+    color: #000;
+    }
+    ul li.active a{
+        background-color: #fff;
+        color: #000;
+    } 
+    section{
+        margin-top: 20px;
+        text-size-adjust: 300px;
+    }
+    section h1{
+        font-size: 70px;
+        color: rgb(255, 251, 251);
+    }
+    .description{
+        color:  white;
+        font-size: 24px;
+    }
+    button{
+        background-color: transparent;
+        border:1px solid white;
+        padding: 10px 10px;
+        color: white;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 20px;
+        box-sizing: border-box;
+        border-radius: 30px;
+        background: linear-gradient(90deg, #41f50b, #f441a5, #f5dd0a, #41f50b);
+        background-size: 400%;
+    }
+    
+        button:hover{
+            animation: animate 8s linear infinite;
+            }
+            @keyframes animate
+            {
+     
+                0%
+                {
+                    background-position: 0%;
+                }
+                100%
+                {
+                    background-position: 400%;
+                }
+        }
+}
